@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Social Media Icons</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .container i {
+            font-size: 80px;
+            color: white;
+            animation: animateColor 6s ease-in-out infinite, animateSize 6s ease-in-out infinite;
+        }
+
+        @keyframes animateSize {
+            0% {
+                transform: scale(1);
+                filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+            }
+            50% {
+                transform: scale(1.05);
+                filter: drop-shadow(0 0 40px rgba(255, 255, 255, 1));
+            }
+            100% {
+                transform: scale(1);
+                filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+            }
+        }
+
+        @keyframes animateColor {
+            0% {
+                color: #1DA1F2;
+                filter: drop-shadow(0 0 20px rgba(29, 161, 242, 0.8));
+            }
+            25% {
+                color: #1877F2;
+                filter: drop-shadow(0 0 20px rgba(24, 119, 242, 0.8));
+            }
+            50% {
+                color: #ffffff;
+                filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+            }
+            75% {
+                color: #A2AAAD;
+                filter: drop-shadow(0 0 20px rgba(162, 170, 173, 0.8));
+            }
+            100% {
+                color: #1DA1F2;
+                filter: drop-shadow(0 0 20px rgba(29, 161, 242, 0.8));
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <i class="fab fa-apple"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-github-square"></i>
+        <i class="fab fa-facebook-square"></i>
+    </div>
+</body>
+</html>
